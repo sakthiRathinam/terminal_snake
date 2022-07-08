@@ -5,9 +5,9 @@ description = "A Terminal Snake for Terminal Persons"
 authors = ["sakthiRatnam <sakthiratnam050@gmail.com>"]
 license = "MIT-LICENSE"
 readme = "README.md"
-homepage = "https://github.com/sakthiRathinam/gamesortvisualize"
-repository = "https://github.com/sakthiRathinam/gamesortvisualize"
-documentation = "https://github.com/sakthiRathinam/gamesortvisualize"
+homepage = "https://github.com/sakthiRathinam/terminal_snake"
+repository = "https://github.com/sakthiRathinam/terminal_snake"
+documentation = "https://github.com/sakthiRathinam/terminal_snake"
 keywords = ["terminalsnake", "terminalsnakepython"]
 include = ["LICENSE", "README.md"]
 
