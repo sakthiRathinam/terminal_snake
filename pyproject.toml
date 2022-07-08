@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "terminalsnake"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytimedinput = "^2.0.1"
+colorama = "^0.4.5"
+pydantic = "^1.9.1"
+rich = "^12.4.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

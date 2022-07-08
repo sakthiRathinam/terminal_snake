@@ -1,0 +1,42 @@
+name: pypi
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.10.x'
+      - name: Install and configure Poetry
+        uses: snok/install-poetry@v1
+        with:
+          version: 0.1.0
+          virtualenvs-create: true
+      - name: Pypi Publish
+        env:
+          PYPI_USER: ${{ secrets.PYPI_USER }}
+          PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        run: |
+          ls -l
+          echo 'Building my package'
+          poetry build
+          echo 'finished build time to publish'
+          echo 'started publishing'
+          poetry publish --username $PYPI_USER --password $PYPI_PASSWORD
+          echo 'module published successfully install now through pip and check'
+  Createtag:
+      needs: Publish
+      runs-on: ubuntu-latest
+      steps:
+        - name: Apply a tag to the new commit
+          id: create_tag
+          uses: mcpierce/github-commit-timestamp-tagger@master
+          with:
+            repo-token: "${{ secrets.REPO_TOKEN }}"
+            base_version: "v0.1.0"
+        - name: Use the tag in another step
+          run: echo ${{ steps.create_tag.outputs.tag_name }}
