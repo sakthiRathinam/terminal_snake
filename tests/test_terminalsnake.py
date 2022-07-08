@@ -1,5 +1,5 @@
 
-from terminalsnake.game import SnakeGame
+from bashsnakegame.game import SnakeGame
 
 
 
