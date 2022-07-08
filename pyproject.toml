@@ -17,6 +17,7 @@ pytimedinput = "^2.0.1"
 colorama = "^0.4.5"
 pydantic = "^1.9.1"
 rich = "^12.4.4"
+pre-commit = "^2.19.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

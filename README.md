@@ -1,6 +1,6 @@
 # terminal_snake
 
-[![image](https://img.shields.io/pypi/v/bashsnakegame.svg?style=flat)](https://pypi.python.org/pypi/tortoise-cli)
+[![image](https://img.shields.io/pypi/v/bashsnakegame.svg?style=flat)](https://pypi.python.org/pypi/bashsnakegame)
 [![image](https://img.shields.io/github/license/sakthiRathinam/terminal_snake
 )](https://github.com/sakthiRathinam/terminal_snake)
 [![image](https://github.com/sakthiRathinam/terminal_snake/workflows/pypi/badge.svg)](https://github.com/sakthiRathinam/terminal_snake/actions?query=workflow:pypi)
@@ -16,9 +16,8 @@ pip install bashsnakegame
 ```
 
 ## Quick Start
-
+### create a python file and paste this  
 ```                                                   
-create a python file and paste this                                                                                                              
 from bashsnakegame.game import SnakeGame
 
 def main():
@@ -29,7 +28,7 @@ main()
 
 Commands:
   shell  run the python file and your game starts.
-  
+
 ```
 
 ## License
