@@ -30,8 +30,11 @@ Commands:
   shell  run the python file and your game starts.
 
 ```
+## Demo
+![snakegame](https://user-images.githubusercontent.com/61803261/177983429-9dd2361e-2dea-40f2-9e48-dbff87b52f8e.gif)
 
 ## License
+
 
 This project is licensed under the
 [MIT](https://github.com/tortoise/tortoise-cli/blob/main/LICENSE) License.
