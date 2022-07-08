@@ -5,6 +5,7 @@ from pydantic import BaseModel
 
 class ColorPalette:
     console: Console = Console()
+    
     def __init__(self):
         pass
     def get_style(self,color_config:Dict[str,any]) -> Style:
