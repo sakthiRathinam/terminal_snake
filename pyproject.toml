@@ -1,8 +1,15 @@
 [tool.poetry]
-name = "terminalsnake"
+name = "bashsnakegame"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "A Terminal Snake for Terminal Persons"
+authors = ["sakthiRatnam <sakthiratnam050@gmail.com>"]
+license = "MIT-LICENSE"
+readme = "README.md"
+homepage = "https://github.com/sakthiRathinam/gamesortvisualize"
+repository = "https://github.com/sakthiRathinam/gamesortvisualize"
+documentation = "https://github.com/sakthiRathinam/gamesortvisualize"
+keywords = ["terminalsnake", "terminalsnakepython"]
+include = ["LICENSE", "README.md"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
